@@ -62,7 +62,8 @@ public class ElevatorSubsystem extends SubsystemBase implements AutoCloseable {
                     ElevatorSimConstants.K_CARRIAGE_MASS,
                     ElevatorSimConstants.K_ELEVATOR_DRUM_RADIUS,
                     ElevatorSimConstants.K_MIN_ELEVATOR_HEIGHT,
-                    ElevatorSimConstants.K_MAX_ELEVATOR_HEIGHT);
+                    ElevatorSimConstants.K_MAX_ELEVATOR_HEIGHT,
+                    false);
 
             m_elevatorSim = new ElevatorSimWrapper(sim,
                     new RevMotorControllerSimWrapper(m_liftMotor),
